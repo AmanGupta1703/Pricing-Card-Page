@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+// Font Family
+$ff-primary: "Open Sans", sans-serif;
+
+// FOnt Sizes
+$fs-14: 0.875rem;
+$fs-16: 1rem;  
+$fs-18: 1.125rem;
+$fs-20: 1.25rem;
+$fs-22: 1.375rem;
+$fs-25: 1.56rem;
+$fs-36: 2.25rem;
+$fs-56: 3.5rem;
+
+// Font Weight
+$fw-regular: 400;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// Colors
+$clr-white: #FFFFFF;
+
+$clr-black: #16181A;
+$clr-midnight-black: #16181A;
+
+$clr-ruby-red: #BC1E4A;
+
+$clr-dark-charcoal: #22262C;
+
+// Border Radius
+$br-4: 0.25rem;
+$br-10: 0.625rem;
+$br-15: 0.94rem;
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $clr-midnight-black;
+    box-sizing: border-box;
+    color: $clr-white;
+    font-family: $ff-primary;
+    font-size: $fs-16;
+    font-weight: $fw-regular;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: transparent;
+}

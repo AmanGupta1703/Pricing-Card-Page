@@ -1,0 +1,123 @@
+.switch {
+	background: $clr-ruby-red;
+	border-radius: $br-15;
+	position: relative;
+	width: 60px;
+	height: 30px;
+
+	&__input {
+		display: none;
+	}
+
+	&__label {
+		background: $clr-white;
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30px;
+		height: 30px;
+		transition: transform 0.3s ease;
+	}
+
+	&__input:checked + &__label {
+		transform: translateX(30px);
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+
+.card {
+	background: $clr-dark-charcoal;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px 8px 20px rgba(0, 0, 0, 0.3),
+		0px 0px 40px rgba(0, 0, 0, 0.2);
+	border-radius: $br-10;
+	padding: 2.31em 2em;
+
+	@media (min-width: 768px) {
+		& {
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+	}
+
+	&__header {
+		display: flex;
+		flex-direction: column;
+		gap: 1.125rem;
+		text-align: center;
+		margin: 0 0 4.13em;
+	}
+
+	&__heading {
+		font-size: $fs-25;
+	}
+
+	&__sub-heading {
+		font-size: $fs-56;
+
+		span {
+			font-size: $fs-22;
+		}
+	}
+
+	&__active-users {
+		margin: 0 0 1.94em;
+		p {
+			color: $clr-ruby-red;
+			font-size: $fs-14;
+			margin-top: 0.57em;
+			padding-left: 1.93em;
+		}
+	}
+
+	.box {
+		border: 1px solid $clr-white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.25em 2.94em;
+
+		h4 {
+			font-size: $fs-20;
+		}
+	}
+
+	&__feature-list {
+		// max-width: 201px;
+		// margin: 0 auto;
+		&__item {
+			text-align: left;
+
+			&:not(:last-child) {
+				margin: 0 0 1em;
+			}
+
+			&::marker {
+				color: $clr-ruby-red;
+			}
+		}
+	}
+
+	.btn {
+		color: inherit;
+		border: 1px solid $clr-ruby-red;
+		border-radius: $br-4;
+		font-size: $fs-18;
+		font-weight: $fw-semibold;
+		padding: 0.78em 3.75em;
+		margin: 2.67em auto 0;
+		width: 100%;
+
+		&:is(:hover, :focus) {
+			color: $clr-white;
+			background: $clr-ruby-red;
+		}
+	}
+
+	&:last-of-type {
+		.card__sub-heading {
+			font-size: $fs-36;
+		}
+	}
+}

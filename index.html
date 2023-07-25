@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card Page</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="center">
+            <header class="header">
+                <p class="header__text">
+                    Your current plan:
+                    <span>Starter Trial • 500MAUs</span>
+                </p>
+            </header>
+        </div>
+
+        <main class="main">
+            <section class="main__header">
+                <h1 class="main__title">Choose a plan</h1>
+                <div class="main__bill-type">
+                    <span>Billed monthly</span>
+                    <div class="switch">
+                        <input type="checkbox" id="switch" class="switch__input">
+                        <label for="switch" class="switch__label"></label>
+                    </div>
+                    <span>Billed anually</span>
+                </div>
+            </section>
+
+            <section class="prices">
+
+                <article class="card card--price">
+
+                    <div class="card__body">
+
+                        <div class="card__header">
+                            <h2 class="card__heading">Starter</h2>
+
+                            <h3 class="card__sub-heading" id="starter-price">$19</h3>
+                        </div>
+
+                        <ul class="card__feature-list">
+
+                            <li class="card__feature-list__item">500 MAUs</li>
+                            <li class="card__feature-list__item">3 projects</li>
+                            <li class="card__feature-list__item">Unlimited guides</li>
+                            <li class="card__feature-list__item">Unlimited flows</li>
+                            <li class="card__feature-list__item">Unlimited branded themes</li>
+                            <li class="card__feature-list__item">Email support</li>
+
+                        </ul>
+
+                        <button class="btn btn--red">Choose Plan</button>
+
+                    </div>
+
+                </article>
+
+                <article class="card card--price">
+
+                    <div class="card__body">
+
+                        <div class="card__header">
+                            <h2 class="card__heading">Pro</h2>
+
+                            <h3 class="card__sub-heading" id="pro-price">$99 <span> / month</span></h3>
+                        </div>
+
+                        <div class="card__active-users">
+                            <div class="box">
+                                <h4>2500 MAUs</h4>
+                                <img src="./images/arrow-down.png" alt="arrow-down">
+                            </div>
+                            <p>Monthly active users</p>
+                        </div>
+
+                        <ul class="card__feature-list">
+
+                            <li class="card__feature-list__item">All starter features, plus:</li>
+                            <li class="card__feature-list__item">Unlimited projects</li>
+                            <li class="card__feature-list__item">Unlimited fully customizable themes</li>
+                            <li class="card__feature-list__item">A dedicated Customer Success Manager</li>
+
+                        </ul>
+
+                        <button class="btn btn--red">Choose Plan</button>
+
+                    </div>
+
+                </article>
+
+                <article class="card card--price">
+
+                    <div class="card__body">
+
+                        <div class="card__header">
+                            <h2 class="card__heading">Enterprise</h2>
+
+                            <h3 class="card__sub-heading">Let’s Talk!</h3>
+                        </div>
+
+                        <ul class="card__feature-list">
+
+                            <li class="card__feature-list__item">All Pro features</li>
+                            <li class="card__feature-list__item">Unlimited MAUs</li>
+                            <li class="card__feature-list__item">Dedicated environment</li>
+                            <li class="card__feature-list__item">Enterprise account administration</li>
+                            <li class="card__feature-list__item">Premium support and services</li>
+
+                        </ul>
+
+                        <button class="btn btn--red">Choose Plan</button>
+
+                    </div>
+
+                </article>
+
+            </section>
+        </main>
+
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
